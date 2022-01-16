@@ -20,7 +20,7 @@ $ ./src/main.py
 
 ## Examples
 
-|              Angle             |             Image               |
+|              Level             |             Image               |
 |--------------------------------|---------------------------------|
 | 0 | ![img](static/000.png) |
 | 64 | ![img](static/064.png) |
