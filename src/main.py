@@ -3,7 +3,7 @@
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
 from math import pi, cos, sin
 
-from cv2 import imshow, COLOR_RGB2BGR, waitKey
+from cv2 import imshow, cvtColor, COLOR_RGB2BGR, waitKey
 from numpy import linspace, array, zeros
 
 
@@ -52,7 +52,7 @@ def slices(level, size):
               int(size / 2 + rotated_mat[i][1] * size / 2), 2] = cube_mat[i][2]
 
     # Отрисовка изображения
-    image = cv2.cvtColor(image.astype(np.float32), COLOR_RGB2BGR)
+    image = cvtColor(image.astype(np.float32), COLOR_RGB2BGR)
     imshow('RGB cube slice', image)
     waitKey()
 
